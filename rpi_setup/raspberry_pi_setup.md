@@ -78,7 +78,8 @@ OSをインストールすることができたら，Raspberry PiをWi-Fi経由�
 
 1. 近距離無線：
     
-    通信距離としては10m程度までで，NFC（Suica，ICOCA）が代表的な方式
+    通信距離としては10m程度までで，NFC（Apple payなど）が代表的な方式
+
 2. 無線PAN（Personal area network）：
 
     通信距離は10～20m程度で，Bluetoothが代表的な方式
