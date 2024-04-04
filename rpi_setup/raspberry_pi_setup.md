@@ -167,19 +167,14 @@ ssh pi@xxx.xxx.xxx.xxx
 続いて，プログラミングを行うための環境構築をしてみましょう．
 第1回，第2回ではGoogle Colaboratoryなどを用いてPythonでのプログラミングを体験しましたが，ここではPythonとGPIO(General-purpose input/ouput)を利用できるようにするための環境を自身で構築してみましょう．
 
-ここでは環境構築のために2種類のパッケージ管理ツールを使用します．1つ目は先ほどもできた`apt`コマンドです．もう一つはPythonのパッケージ管理システム`pip`です．
+ここでも環境構築のために`apt`コマンドを使用します．
 
 【課題3】
 
-まずは`apt`コマンドで`pip`とPythonの様々なパッケージをインストールする際に必要となる`python3-dev`をインストールしてみましょう．
-それぞれ`apt`で指定するパッケージ名は`python3-pip`と`python3-dev`です．
+まずは`apt`コマンドで`python3-dev`と`python3-rpi.gpio`をインストールしてみましょう．
+
 
 【課題4】
-
-次に，`pip`コマンドの使用方法を検索し，PythonからGPIOを制御するために必要なパッケージ`RPi.GPIO`をインストールしてみましょう．
-
-
-【課題5】
 
 最後に以下のソースコードを`test.py`という名前でRaspberry Pi上に作成し，実行してみましょう．
 端末上で`python test.py`と入力して実行すれば`Hello World`と表示されるはずです．
