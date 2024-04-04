@@ -34,6 +34,9 @@ LinuxはWindows OSやmacOSと同様にコンピュータを動かすためのソ
 3. ラズパイOSの書き込み: 
     
     ダウンロードしたRaspberry Pi OSのイメージをSDカードに書き込みます．
+    - Raspberry Piの型番：Raspberry Pi 4
+    - OS：64-bit
+    - Strage：SDカードを指定
 
 4. SDカードの取り出しとラズパイへの挿入: 
 
@@ -45,13 +48,20 @@ LinuxはWindows OSやmacOSと同様にコンピュータを動かすためのソ
 
 6. 初期設定: 
 
-    起動後，画面に従ってユーザ名やパスワード，言語，キーボードレイアウト，Wi-Fi設定などの初期設定を行います．
+    起動後，画面に従ってユーザ名やパスワード，言語，キーボードレイアウトなどの初期設定を行います．
     
-    注）ユーザ名は`pi`，パスワード`okadai`としてください
+    - 注1）ユーザ名は`pi`，パスワード`okadai`としてください
+    - 注2）WiFiの設定とアップデートのチェックはスキップして構いません
 
 7. システムアップデート: 
 
-    初期設定が完了したら，ターミナルを開き，以下のコマンドを実行してシステムを最新のものへアップデートします．
+    初期設定が完了したら，GUIでWiFi（00ouwifi）へ接続します．接続の際には以下のように設定します．
+    - Security：WPA/WPA2 Enterprise
+    - 認証：保護つきEAP(PEAP)
+    - ユーザ名：岡大ID
+    - パスワード：岡大IDのパスワード
+    
+    ターミナルから以下のコマンドを実行してシステムを最新のものへアップデートします．
     ```
     sudo apt update
     sudo apt full-upgrade -y
@@ -172,7 +182,7 @@ ssh pi@xxx.xxx.xxx.xxx
 【課題5】
 
 最後に以下のソースコードを`test.py`という名前でRaspberry Pi上に作成し，実行してみましょう．
-実行は端末上で`python
+端末上で`python test.py`と入力して実行すれば`Hello World`と表示されるはずです．
 
 ```
 import RPi.GPIO as GPIO
