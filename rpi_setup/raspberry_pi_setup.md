@@ -56,10 +56,11 @@ LinuxはWindows OSやmacOSと同様にコンピュータを動かすためのソ
 7. システムアップデート: 
 
     初期設定が完了したら，GUIでWiFi（00ouwifi）へ接続します．接続の際には以下のように設定します．
-    - Security：WPA/WPA2 Enterprise
-    - 認証：保護つきEAP(PEAP)
-    - ユーザ名：岡大ID
-    - パスワード：岡大IDのパスワード
+    - WiFi Security：WPA/WPA2 Enterprise
+    - Authentication（認証）：保護つきEAP(PEAP)
+    - `No CA Certificates is required`にチェックを入れる
+    - Username（ユーザ名）：岡大ID
+    - Password（パスワード）：岡大IDのパスワード
     
     ターミナルから以下のコマンドを実行してシステムを最新のものへアップデートします．
     ```
@@ -122,7 +123,7 @@ OSをインストールすることができたら，Raspberry PiをWi-Fi経由�
 sudo apt update && sudo apt install ssh -y 
 ```
 先ほども`sudo`や`apt`というものを使用しましたが，これらはそれぞれ次の用途で使用されています．
-パスワードをきかれるので，メモしたパスワードを入力してください．
+パスワードをきかれるので，パスワード`ip`を入力してください．
 
 - `sudo`：
 
